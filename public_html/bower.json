@@ -1,0 +1,22 @@
+{
+  "name": "blazinq.nl",
+  "version": "0.0.1",
+  "homepage": "http://blazinq.nl/",
+  "authors": [
+    "Chase Sillevis <chase@blazinq.com>"
+  ],
+  "description": "The Blazinq website",
+  "main": "./assets/js/script.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.1.1"
+  }
+}
