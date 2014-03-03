@@ -1,3 +1,5 @@
 .sass-cache
 public_html/bower_components
 public_html/node_modules
+
+public_html/sftp-config.json

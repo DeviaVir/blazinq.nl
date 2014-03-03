@@ -1,1 +1,7 @@
 // Everything that marks up your pages
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,400italic);
+
+h1, h2, h3, h4, h5, p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+}

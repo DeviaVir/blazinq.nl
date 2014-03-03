@@ -5,15 +5,62 @@ header {
   box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
   position: relative;
 
+  .header .columns {
+    z-index: 3;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    text-align: center;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 120px;
+    margin-top: 30px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  }
+
   .blur {
-    background: #f8f8f8;
-    @include filter(blur(10px));
-    @include opacity(.35);
+    //background: #f8f8f8;
+    //@include filter(blur(10px));
+    //@include opacity(.35);
+    @include opacity(.55);
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  .logo {
+    display: block;
+    background: transparent url('../img/logo.svg') no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    background-position: 10px 50%;
+    margin: 0 auto;
+
+    &.fallback {
+      background-image: url('../img/blazinq.png');
+      background-size: 160px 160px;
+      background-position: 50% 50%;
+    }
+  }
+}
+
+.menu {
+  ul {
+    li {
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
   }
 }
