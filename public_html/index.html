@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="blazinq"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +37,7 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   </head>
-  <body>
+  <body ng-controller="AppController">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -45,28 +45,31 @@
       <header>
         <div class="header row">
           <div class="large-12 small-12 columns">
-            <h1>Blazinq</h1>
+            <h1 class="blazinq">Blazinq</h1>
             <p>Ads done right</p>
-            <i class="logo"></i>
+            <a href="#"><i class="logo"></i></a>
           </div>
           <div class="blur">
             <img src="assets/img/bg.jpg" />
           </div>
         </div>
       </header>
-      <div class="menu row">
-        <div class="large-3 small-12 columns">&nbsp;</div>
-        <div class="large-6 small-12 columns">
-          <div class="row">
-            <ul class="small-block-grid-3">
-              <li><a href="#mission">Mission</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#connect">Connect</a></li>
-            </ul>
+      <menu>
+        <div class="menu row">
+          <div class="large-3 small-12 columns">&nbsp;</div>
+          <div class="large-6 small-12 columns">
+            <div class="row">
+              <ul class="small-block-grid-3">
+                <li><a href="#/features">Features</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/portfolio">Portfolio</a></li>
+              </ul>
+            </div>
           </div>
+          <div class="large-3 small-12 columns">&nbsp;</div>
         </div>
-        <div class="large-3 small-12 columns">&nbsp;</div>
-      </div>
+      </menu>
+      <div id="page" ng-view></div>
     </div>
 
     <script src="assets/js/package.js"></script>

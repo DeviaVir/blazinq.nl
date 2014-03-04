@@ -23,6 +23,9 @@ module.exports = function(grunt) {
           './bower_components/jquery.cookie/jquery.cookie.js',
           './bower_components/fastclick/lib/fastclick.js',
           './bower_components/foundation/js/foundation.js',
+          './bower_components/angular/angular.js',
+          './bower_components/angular-route/angular-route.js',
+          './bower_components/angular-sanitize/angular-sanitize.js',
           './bower_components/modernizr/modernizr.js',
           './assets/js/script.js'
         ],   
@@ -43,6 +46,9 @@ module.exports = function(grunt) {
           './bower_components/jquery.cookie/jquery.cookie.js',
           './bower_components/fastclick/lib/fastclick.js',
           './bower_components/foundation/js/foundation.js',
+          './bower_components/angular/angular.js',
+          './bower_components/angular-route/angular-route.js',
+          './bower_components/angular-sanitize/angular-sanitize.js',
           './bower_components/modernizr/modernizr.js',
           './assets/js/script.js'
         ],
