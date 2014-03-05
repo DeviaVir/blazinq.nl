@@ -94,6 +94,8 @@ menu {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #f3f4f6;
+  z-index: 20;
+  position: relative;
   .menu {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -108,4 +110,10 @@ menu {
       }
     }
   }
+}
+
+#page {
+  z-index: 20;
+  position: relative;
+  background: #f4f4f4;
 }
