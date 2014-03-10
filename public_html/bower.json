@@ -17,6 +17,19 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.1.1"
+    "foundation": "~5.1.1",
+    "instantclick": "*",
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14",
+    "angular-sanitize": "~1.2.14",
+    "fastclick": "~1.0.0",
+    "fontawesome": "~4.0.3",
+    "jquery": "~2.1.0",
+    "jquery-placeholder": "~2.0.7",
+    "jquery.cookie": "~1.4.0",
+    "modernizr": "~2.7.2"
+  },
+  "resolutions": {
+    "fastclick": "~0.6.11"
   }
 }
